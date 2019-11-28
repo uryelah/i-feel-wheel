@@ -282,7 +282,11 @@ feelingsLayer0.forEach((feel, i) => {
                 Array.from(thirdLayer.children).forEach((feelPage) => {
                     feelPage.classList.add("open-2")
                     feelPage.addEventListener("click", eve => {
-                        window.location.href += `${curretLayer2}/${curretLayer3}/${feelPage.textContent}`.toLowerCase()
+                        //window.location.href += `${curretLayer2}/${curretLayer3}/${feelPage.textContent}`.toLowerCase()
+                        document.getElementById("modal-full").classList.remove("invisible")
+                        document.getElementById("modal-full").classList.add(`${curretLayer2.toLowerCase()}`) 
+                        document.getElementById("mofull-h1").textContent = `${curretLayer2}/${curretLayer3}/${feelPage.textContent}`
+                        document.getElementById("cover").classList.add("cover")
                     })
                 })
                 thirdLayer.classList.add("show-layer-2")
@@ -298,6 +302,15 @@ center.addEventListener("click", e => {
     })
     center.classList.toggle("buble")
     center.classList.toggle("shrinkly")
+})
+
+//
+
+let closeButton = document.getElementsByClassName("close")[0]
+
+closeButton.addEventListener("click", (e) => {
+    document.getElementById("modal-full").classList.add("invisible");
+    document.getElementById("cover").classList.remove("cover");
 })
 
 }
