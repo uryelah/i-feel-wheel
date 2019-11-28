@@ -105,9 +105,13 @@ feelingsLayer0.forEach((feel, i) => {
         secondLayer.innerHTML = ""
         thirdLayer.innerHTML = ""
         //
+        let blobNumber = feelings0[`${feel}0`].subFeels.length;
+        let angle = (360 + (10.008 * blobNumber)/ blobNumber);
+
         feelings0[`${feel}0`].subFeels.forEach((f, index) => {
-            let left = Math.cos((360 + (10 * feelings0[`${feel}0`].subFeels.length)/(feelings0[`${feel}0`].subFeels.length)) * index) * 200;
-            let top = Math.sin((360 + (10 * feelings0[`${feel}0`].subFeels.length)/(feelings0[`${feel}0`].subFeels.length)) * index) * 200;
+            console.log("#110 ", index, " ",angle * index)
+            let left = Math.cos(angle * index) * 200;
+            let top = Math.sin(angle * index) * 200;
             secondLayer.innerHTML += `<button class="feel-1 ${curretLayer2.toLowerCase()}" id="${alphabeth[index]}1" type="button" style="left:${left}px; top:${top}px;">${f}</button>`
         })
         // Add event listener to layer 2 of buttons
