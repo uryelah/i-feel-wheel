@@ -1,0 +1,312 @@
+// Place all the styles related to the FeelingPages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+@import url('https://fonts.googleapis.com/css?family=Baskervville&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Reenie+Beanie&display=swap');
+body {
+    margin-top: 185px;
+    background-color: #ebebeb;
+    min-height: 800px;
+}
+
+article {
+    margin: 0 25%;
+    margin-top: 300px;
+    min-width: 400px;
+}
+
+.center {
+    position: absolute;
+    top: 0;
+    left: calc(50% - 150px);
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    zborder: 2px solid black;
+    background-color: white;
+    font-family: 'Baskervville', serif;
+    font-family: 'Reenie Beanie', cursive;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    color: black;
+    zbox-shadow: 0 0 5px 5px #e2e2e2;
+    margin: 0 auto;
+    z-index: 500;
+    transition: all 0.5s ease-in;
+    filter:url("#fancy-goo");
+    cursor: pointer;
+}
+
+.buble {
+    animation: bubleUp 0.5s linear;
+    animation-delay: 0.3s;
+}
+
+@keyframes bubleUp {
+    0% {
+        transform: scale(1);
+    }
+    30% {
+        transform: scale(0.8);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    75% {
+        transform: scale(0.9);
+    }
+    83% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.shrinkly {
+    animation: smolUp 0.6s ease-in-out;
+}
+
+.shrinkly-max {
+    animation: smolUp2 0.6s ease-in;
+}
+
+@keyframes smolUp {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(0.9);
+    }
+}
+
+@keyframes smolUp2 {
+    0% {
+        transform: scale(0.9);
+    }
+    30% {
+        transform: scale(0.6);
+    }
+    50% {
+        transform: scale(0.95);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.pointer-none {
+    pointer-events: none !important;
+}
+
+[id|="layer"] {
+    position: absolute;
+    top: 125px;
+    left: calc(50% - 50px);
+    margin: 0 auto;
+    margin-top: -20px;
+    width: min-content;
+    zfilter: drop-shadow(2px 2px 0 black) drop-shadow(2px -2px 0 black) drop-shadow(-2px 2px 0 black) drop-shadow(-2px -2px 0 black);
+}
+
+[class|="feel"] {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: white;
+    zborder: 2px solid black;
+    zbox-shadow: 0 0 5px 5px #e2e2e2;
+    font-family: 'Reenie Beanie', cursive;
+    font-size: 1.75rem;
+    position: absolute;
+    transition: all 0.7s ease-in, text-shadow 0s, color 0s;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    cursor: pointer;
+}
+
+[class|="feel"]:hover {
+    color: white;
+    text-shadow: 1px 1px 0 black, -1px 1px 0 black, 1px -1px 0 black, -1px -1px 0 black;
+    filter: brightness(1.1);
+}
+
+.feel-2 {
+    opacity: 1;
+    transition: all 0.5s ease-in-out;
+}
+
+.no-trans {
+    transform: translate(0, 0) !important;
+    border-radius: 50%;
+    opacity: 0;
+    transition: transform 0.2s ease-in, opacity 1s ease-in-out;
+}
+
+[id|="layer"] .open-0:first-child {
+    left: calc(200px - 1px);
+    top: -20px;
+    background-color: #ffff8f;
+    border: 2px solid #ffff8f;
+}
+
+.happy {
+    background-color: #ffff8f !important;
+    border: 2px solid #ffff8f;
+}
+
+[id|="layer"] .open-0:nth-child(2) {
+    left: calc(79.3px + 57px);
+    top: calc(183.60px - 43px);
+    background-color: #90bce1;
+    border: 2px solid #90bce1;
+}
+
+.sad {
+    background-color: #90bce1 !important;
+    border: 2px solid #90bce1;
+}
+
+[id|="layer"] .open-0:nth-child(3) {
+    left: calc(-137.11px + 107px);
+    top: calc(145.60px + 47px);
+    background-color: #8f8f8f;
+    border: 2px solid #8f8f8f;
+}
+
+.disgusted {
+    background-color: #8f8f8f !important;
+    border: 2px solid #8f8f8f;
+}
+
+[id|="layer"] .open-0:nth-child(4) {
+    left: calc(-188.03px + 16px);
+    top: calc(-68.14px + 162px);
+    background-color: #ff8f8e;
+    border: 2px solid #ff8f8e;
+}
+
+.angry {
+    background-color: #ff8f8e !important;
+    border: 2px solid #ff8f8e;
+}
+
+[id|="layer"] .open-0:nth-child(5) {
+    left: calc(-12px - 175px);
+    top: calc(-199.64px + 120px);
+    background-color: #ffdf8e;
+    border: 2px solid #ffdf8e;
+}
+
+.fearful {
+    background-color: #ffdf8e !important;
+    border: 2px solid #ffdf8e;
+}
+
+[id|="layer"] .open-0:nth-child(6) {
+    left: calc(178.52px - 242px);
+    top: calc(-90.17px - 105px);
+    background-color: #8ed9ae;
+    border: 2px solid #8ed9ae;
+}
+
+.bad {
+    background-color: #8ed9ae !important;
+    border: 2px solid #8ed9ae;
+}
+
+[id|="layer"] .open-0:last-child {
+    left: calc(153.57px - 38px);
+    top: calc(128.13px - 300px);
+    background-color: #bca2d1;
+    border: 2px solid #bca2d1;
+}
+
+.open-1 {
+    transition: all 0.5s ease-in, text-shadow 0s, color 0s;
+    transition-delay: 1.5s;
+    z-index: 100 !important;
+    filter: saturate(1.5) contrast(1.5) brightness(0.8);
+}
+
+.open-1:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 0 5px white;
+}
+
+.layer-1 {
+    max-width: 100px;
+    opacity: 0;
+    transition: all 0.5s ease-in;
+    transition-delay: 1s;
+}
+
+.show-layer-1 {
+    transition: all 0.5s ease-in-out;
+    transition-delay: 1s;
+    max-width: max-content;
+    opacity: 1;
+}
+
+.open-2 {
+    transition: all 0.5s ease-in;
+    transition-delay: 0.5s;
+    z-index: 100 !important;
+    filter: saturate(2) contrast(2) brightness(0.6);
+}
+
+.open-2:hover {
+    box-shadow: 0 0 0 15px #ebebebb6;
+    font-size: 2rem;
+    z-index: -1 !important;
+}
+
+.layer-2 {
+    max-width: 100px;
+    opacity: 0;
+}
+
+.show-layer-2 {
+    transition: all 0.1s ease-in-out;
+    transition-delay: 0.3s;
+    max-width: max-content;
+    opacity: 1;
+}
+
+.filled-center {
+    color: transparent;
+}
+
+.selected-feel {
+    position: absolute;
+    top: -105px !important;
+    left: calc(50% - 100px) !important; 
+    width: 300px;
+    height: 300px;
+    font-size: 3rem !important;
+    z-index: 1000 !important;
+}
+
+.unselected-feel {
+    top: 0 !important;
+    left: 0 !important;
+}
+
+.surprised {
+    background-color: #bca2d1 !important;
+    border: 2px solid #bca2d1;
+}
+
+.happy, .sad, .disgusted, .angry, .fearful, .bad, .surprised {
+    transition: all 0.75s ease-in;
+}
+
+form {
+    width: 100%;
+    position: relative;
+    filter:url("#fancy-goo") drop-shadow(2px 2px 0 black) drop-shadow(2px -2px 0 black) drop-shadow(-2px 2px 0 black) drop-shadow(-2px -2px 0 black)
+}

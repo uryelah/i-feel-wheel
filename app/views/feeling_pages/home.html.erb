@@ -1,0 +1,46 @@
+<form>
+    <div class="center buble" id="center">
+        <p>I feel...</p>
+    </div>
+    <div id="layer-0">
+        <button class="feel-0" id="a0" type="button">Happy</button>
+        <button class="feel-0" id="b0" type="button">Sad</button>
+        <button class="feel-0" id="c0" type="button">Disgusted</button>
+        <button class="feel-0" id="d0" type="button">Angry</button>
+        <button class="feel-0" id="e0" type="button">Fearful</button>
+        <button class="feel-0" id="f0" type="button">Bad</button>
+        <button class="feel-0" id="g0" type="button">Surprised</button>
+    </div>
+    <div id="layer-1" class="layer-1">
+    </div>
+    <div id="layer-2" class="layer-2">
+    </div>
+</form>
+
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+  <defs>
+    <filter id="old-goo">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+      <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+      <feBlend in="SourceGraphic" in2="goo" />
+    </filter>
+    <filter id="fancy-goo">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+      <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo" />
+      <feComposite in="SourceGraphic" in2="goo" operator="atop"/>
+    </filter>
+  </defs>
+</svg>
+
+
+<article>
+<h1>About</h1>
+
+<strong>Inspired by <a href="https://imgur.com/tCWChf6">Geofrey Roberts</a> Emotions Wheel</strong>
+
+<p>I work with people who have limited emotional vocabulary and as a result the intensity of their negative emotions and experiences is heightened because they can't describe their feelings (especially their negative feelings). That's why this list is heavily focused on negative emotions/ experiences. Being able to clearly identify how we are feeling has been shown to reduce this intensity of experience because it re-engages our rational mind.
+
+I believe the first application of an emotion wheel in this style was from Dr. Gloria Willcox back in the early 80’s. The wheel I put together is much more comprehensive than her original wheeI although I suspect she had a more studious approach. It’s possible the wheel I originally based mine on was created by a teacher named Kaitlin Robb, although I think her wheel is also an updated version of the earlier one I found circulating the internet.
+</p>
+<h2>Select a general emotion closest to what you are feeling</h2>
+</article>
