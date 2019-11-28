@@ -1,3 +1,4 @@
+// This funciton was supposed to be in the helpers.js but require did not work
 let blockClicksFor = (element, time) => {
     element.classList.add("pointer-none")
 
