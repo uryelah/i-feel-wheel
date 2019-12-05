@@ -1144,10 +1144,10 @@ feelingsLayer0.forEach((feel, i) => {
                 //    thirdLayer.innerHTML += `<button class="feel-2" id="a2" type="button" style="top: 0px; left: ${parseInt(ev.target.style.left.substring(0, ev.target.style.left.length -3)) * 15}px;">${feelings1[`${alphabeth[ind]}2`].subFeels[0]}</button>`
                 //    thirdLayer.innerHTML += `<button class="feel-2" id="b2" type="button" style="top: 0px; left: ${parseInt(ev.target.style.left.substring(0, ev.target.style.left.length -3)) * 20}px;">${feelings1[`${alphabeth[ind]}2`].subFeels[1]}</button>`
                 //style="left:${Math.cos((360 + (10 * feelings0[`${feel}0`].subFeels.length)/(feelings0[`${feel}0`].subFeels.length)) * index) * 200}px; top:${Math.sin((360 + (10 * feelings0[`${feel}0`].subFeels.length)/(feelings0[`${feel}0`].subFeels.length)) * index) * 200}px;"
-                let left1 = Math.cos(0.25 + ((360 + (10 * feelings0[`${feel}0`].subFeels.length)/(feelings0[`${feel}0`].subFeels.length))) * feelings0[`${feel}0`].subFeels.indexOf(curretLayer3)) * 285;
-                let top1 = Math.sin(0.25 + ((360 + (10 * feelings0[`${feel}0`].subFeels.length)/(feelings0[`${feel}0`].subFeels.length))) * feelings0[`${feel}0`].subFeels.indexOf(curretLayer3)) * 285;
-                let left2 = Math.cos(-0.25 + ((360 + (10 * feelings0[`${feel}0`].subFeels.length)/(feelings0[`${feel}0`].subFeels.length))) * feelings0[`${feel}0`].subFeels.indexOf(curretLayer3)) * 285;
-                let top2 = Math.sin(-0.25 + ((360 + (10 * feelings0[`${feel}0`].subFeels.length)/(feelings0[`${feel}0`].subFeels.length))) * feelings0[`${feel}0`].subFeels.indexOf(curretLayer3)) * 285;
+                let left1 = Math.cos(0.25 + ((360 + (10.008 * feelings0[`${feel}0`].subFeels.length)/(feelings0[`${feel}0`].subFeels.length))) * feelings0[`${feel}0`].subFeels.indexOf(curretLayer3)) * 285;
+                let top1 = Math.sin(0.25 + ((360 + (10.008 * feelings0[`${feel}0`].subFeels.length)/(feelings0[`${feel}0`].subFeels.length))) * feelings0[`${feel}0`].subFeels.indexOf(curretLayer3)) * 285;
+                let left2 = Math.cos(-0.25 + ((360 + (10.008 * feelings0[`${feel}0`].subFeels.length)/(feelings0[`${feel}0`].subFeels.length))) * feelings0[`${feel}0`].subFeels.indexOf(curretLayer3)) * 285;
+                let top2 = Math.sin(-0.25 + ((360 + (10.008 * feelings0[`${feel}0`].subFeels.length)/(feelings0[`${feel}0`].subFeels.length))) * feelings0[`${feel}0`].subFeels.indexOf(curretLayer3)) * 285;
                 thirdLayer.innerHTML += `<button class="no-trans feel-2 ${curretLayer2.toLowerCase()}" id="a2" type="button" style="transform: translate(${left1}px, ${top1}px);">${feelings1[`${alphabeth[ind]}2`].subFeels[0]}</button>`
                 thirdLayer.innerHTML += `<button class="no-trans feel-2 ${curretLayer2.toLowerCase()}" id="b2" type="button" style="transform: translate(${left2}px, ${top2}px);">${feelings1[`${alphabeth[ind]}2`].subFeels[1]}</button>`
 
